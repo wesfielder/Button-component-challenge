@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.app {
+  margin: 2em;
+  font-size: 16px;
+  min-width: 360px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-div {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f4f4f;
+  margin: 0 1em 1em 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle-div {
+  font-family: Ubuntu Mono;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.small-col-button-area {
+  width: 60%;
+  margin: 0 0 2.5em 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.medium-col-button-area {
+  width: 80%;
+  margin: 0 0 2.5em 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.large-col-button-area {
+  width: 100%;
+  margin: 0 0 2.5em 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.button-display {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: 0;
+  min-width: 50%;
+}
+
+.large-button-display {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 0;
+  min-width: 25%;
 }
