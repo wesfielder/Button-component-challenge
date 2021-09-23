@@ -1,10 +1,56 @@
 .app {
-  margin: 2em;
-  font-size: 16px;
+  display: flex;
+  flex: row nowrap;
   min-width: 360px;
 }
 
+.logo {
+  margin: 2.875em 3.375em;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #090f31;
+}
+
+.red-logo {
+  color: #f7542e;
+}
+
+.nav-list {
+  margin: 6.5em 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 2em 0;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #9e9e9e;
+}
+
+.selected-nav-item {
+  color: #090f31;
+}
+
+.demo-area {
+  width: 100%;
+  /* top | right | bottom | left */
+  margin: 3.25em 5.125em 1em;
+  font-size: 16px;
+}
+
+.sidebar {
+  background: #fafbfd;
+}
+
 .title-div {
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
@@ -15,7 +61,19 @@
   margin: 0 1em 1em 0;
 }
 
-.subtitle-div {
+.subtitle-dark {
+  margin: 0 0 0.5em;
+  font-family: Ubuntu Mono;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+
+.subtitle-light {
+  margin: 0 0 0.5em;
   font-family: Ubuntu Mono;
   font-size: 0.75rem;
   font-style: normal;
@@ -27,7 +85,6 @@
 
 .small-col-button-area {
   width: 60%;
-  margin: 0 0 2.5em 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -36,21 +93,27 @@
 
 .medium-col-button-area {
   width: 80%;
-  margin: 0 0 2.5em 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .large-col-button-area {
-  width: 100%;
-  margin: 0 0 2.5em 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 
+/* .size-col-button-area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+} */
+
 .button-display {
+  margin: 0 0 2.5em 0;
+  /* padding: 0 1em 0 0; */
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -60,6 +123,7 @@
 }
 
 .large-button-display {
+  margin: 0 0 2.5em 0;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
@@ -67,4 +131,45 @@
   text-align: left;
   margin-left: 0;
   min-width: 25%;
+}
+
+.size-button-display {
+  margin: 0 0 2.5em 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 0;
+  min-width: 25%;
+}
+
+.icons-link {
+  margin: 1em 0 2em;
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.footer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  color: #c0bfbf;
+}
+
+a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  color: #c0bfbf;
 }
