@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Button-component-challenge/static/css/main.812c7395.chunk.css",
+    "main.css": "/Button-component-challenge/static/css/main.945fce61.chunk.css",
     "main.js": "/Button-component-challenge/static/js/main.0df78f96.chunk.js",
     "main.js.map": "/Button-component-challenge/static/js/main.0df78f96.chunk.js.map",
     "runtime-main.js": "/Button-component-challenge/static/js/runtime-main.e52c824a.js",
@@ -10,7 +10,7 @@
     "static/js/3.4731ada3.chunk.js": "/Button-component-challenge/static/js/3.4731ada3.chunk.js",
     "static/js/3.4731ada3.chunk.js.map": "/Button-component-challenge/static/js/3.4731ada3.chunk.js.map",
     "index.html": "/Button-component-challenge/index.html",
-    "static/css/main.812c7395.chunk.css.map": "/Button-component-challenge/static/css/main.812c7395.chunk.css.map",
+    "static/css/main.945fce61.chunk.css.map": "/Button-component-challenge/static/css/main.945fce61.chunk.css.map",
     "static/js/2.c7aa2592.chunk.js.LICENSE.txt": "/Button-component-challenge/static/js/2.c7aa2592.chunk.js.LICENSE.txt",
     "static/media/add_shopping_cart_white_24dp.5d8eae78.svg": "/Button-component-challenge/static/media/add_shopping_cart_white_24dp.5d8eae78.svg",
     "static/media/cancel_white_24dp.79555b0b.svg": "/Button-component-challenge/static/media/cancel_white_24dp.79555b0b.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.e52c824a.js",
     "static/js/2.c7aa2592.chunk.js",
-    "static/css/main.812c7395.chunk.css",
+    "static/css/main.945fce61.chunk.css",
     "static/js/main.0df78f96.chunk.js"
   ]
 }
