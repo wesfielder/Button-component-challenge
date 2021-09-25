@@ -1,30 +1,51 @@
 .app {
   display: flex;
-  flex: row nowrap;
+  flex-flow: row nowrap;
   min-width: 360px;
 }
 
-.logo {
-  margin: 2.875em 3.375em;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 19px;
-  color: #090f31;
+.demo-area {
+  width: 100%;
+  /* top | right | bottom | left */
+  margin: 3.25em 5.125em 1em;
+  font-size: 16px;
 }
 
-.red-logo {
-  color: #f7542e;
+.sidebar {
+  background: #fafbfd;
+  font-size: 16px;
+}
+
+.small-col-button-area {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.medium-col-button-area {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.large-col-button-area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .nav-list {
-  margin: 6.5em 0;
+  margin: 6.5em 0 0 3rem;
+  padding: 0;
   list-style-type: none;
 }
 
 .nav-item {
-  margin: 2em 0;
+  margin: 2rem 0;
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: bold;
@@ -38,18 +59,21 @@
   color: #090f31;
 }
 
-.demo-area {
-  width: 100%;
-  /* top | right | bottom | left */
-  margin: 3.25em 5.125em 1em;
-  font-size: 16px;
+.logo {
+  margin: 2em 3rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #090f31;
 }
 
-.sidebar {
-  background: #fafbfd;
+.red-logo {
+  color: #f7542e;
 }
 
-.title-div {
+.title {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -83,37 +107,8 @@
   color: #828282;
 }
 
-.small-col-button-area {
-  width: 60%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-
-.medium-col-button-area {
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.large-col-button-area {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-/* .size-col-button-area {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-} */
-
 .button-display {
   margin: 0 0 2.5em 0;
-  /* padding: 0 1em 0 0; */
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -172,4 +167,91 @@ a {
   line-height: 17px;
   text-align: left;
   color: #c0bfbf;
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 360px;
+    margin: 0;
+  }
+
+  .demo-area {
+    margin: 1em 0em;
+    font-size: 16px;
+  }
+
+  .sidebar {
+    background: #fafbfd;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+  }
+
+  .logo {
+    margin: 1.5em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #090f31;
+  }
+
+  .nav-list {
+    display: none;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .selected-nav-item {
+    color: #090f31;
+  }
+
+  .small-col-button-area,
+  .medium-col-button-area,
+  .large-col-button-area {
+    margin: 0 0 0 1em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4f4f4f;
+    margin: 0 1em 1em 0.667em;
+  }
+
+  .icons-link {
+    margin: 1em 0 2em 1em;
+    font-family: Ubuntu Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+  }
+
+  .footer {
+    margin: 0 0 0 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: #c0bfbf;
+  }
 }

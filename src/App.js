@@ -21,7 +21,7 @@ function App() {
         </div>
       </div>
       <div className="demo-area">
-        <div className="title-div">Buttons</div>
+        <div className="title">Buttons</div>
         <div className="small-col-button-area">
           <div className="button-display">
             <span className="subtitle-dark">&#60;Button /&#62;</span>
@@ -92,7 +92,7 @@ function App() {
           <div className="button-display">
             <span className="subtitle-dark">&#60;Button disabled /&#62;</span>
             <div>
-              <Button disabled={true} />
+              <Button disabled={true} text="Disabled" />
             </div>
           </div>
 
@@ -101,7 +101,7 @@ function App() {
               &#60;Button variant="text" disabled /&#62;
             </span>
             <div>
-              <Button buttonType="text" disabled />
+              <Button buttonType="text" text="Disabled" disabled />
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ function App() {
               &#60;Button color="secondary"/&#62;
             </span>
             <div>
-              <Button color="secondary" />
+              <Button color="secondary" text="Secondary" />
             </div>
           </div>
 
@@ -182,7 +182,7 @@ function App() {
               &#60;Button color="danger" /&#62;
             </span>
             <div>
-              <Button color="danger" />
+              <Button color="danger" text="Danger" />
             </div>
           </div>
         </div>
@@ -205,6 +205,7 @@ function App() {
             <div>
               <Button
                 color="secondary"
+                text="Secondary"
                 className="secondary-color-hover-focus"
               />
             </div>
@@ -212,7 +213,11 @@ function App() {
 
           <div className="large-button-display">
             <div>
-              <Button color="danger" className="danger-color-hover-focus" />
+              <Button
+                color="danger"
+                text="Danger"
+                className="danger-color-hover-focus"
+              />
             </div>
           </div>
         </div>

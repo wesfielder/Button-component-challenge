@@ -7,6 +7,7 @@ import help_icon from "./button-icons/help_white_24dp.svg";
 import pets_icon from "./button-icons/pets_white_24dp.svg";
 
 const Button = (props) => {
+  const text = props.text;
   const buttonType = props.buttonType;
   const boxShadow = props.boxShadow;
   const disabled = props.disabled;
@@ -15,7 +16,7 @@ const Button = (props) => {
   const buttonSize = props.size;
   const color = props.color;
 
-  let buttonText = disabled ? "Disabled" : "Default";
+  let buttonText = text ? text : "Default";
 
   let styleClasses = ["button-base", "box-shadow"];
 
